@@ -8,10 +8,10 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    return a / b if b != 0 else "Помилка: ділення на нуль неможливе!"
+    return a / b if b != 0 else "Ділення на нуль неможливе!"
 
 def calculator():
-    print("Оберіть операцію:")
+    print("Оберіть одну з операцій:")
     print("1. Додавання")
     print("2. Віднімання")
     print("3. Множення")
