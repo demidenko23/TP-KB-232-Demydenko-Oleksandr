@@ -1,4 +1,3 @@
-## List of students with 4 fields: name, phone, email, age
 students = [
     {"name": "Bob", "phone": "0631234567", "email": "bob@example.com", "age": 20},
     {"name": "Emma", "phone": "0631234567", "email": "emma@example.com", "age": 22},
@@ -22,7 +21,6 @@ def addNewElement():
     age = int(input("Please enter student age: "))
 
     newItem = {"name": name, "phone": phone, "email": email, "age": age}
-    # Find insert position
     insertPosition = 0
     for student in students:
         if name > student["name"]:
@@ -58,7 +56,6 @@ def updateElement():
             new_age = input("Enter new age (or press Enter to keep the current): ")
             new_age = int(new_age) if new_age else student["age"]
 
-            # Remove the old entry and reinsert with updated info to maintain sorted order
             students.remove(student)
             updated_student = {"name": new_name, "phone": new_phone, "email": new_email, "age": new_age}
             insertPosition = 0
